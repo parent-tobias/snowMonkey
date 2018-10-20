@@ -7,3 +7,6 @@ It isn't a matter of whether you use jQuery, or React, or Backbone, or CakePHP -
 An example, suppose you have a Pomodoro timer. Yeah, like the one on FCC. It's easy to jump in and whack together the HTML to make it happen, then wire in some jQuery listeners and have them do stuff. And honestly, the FCC case study makes it easier, by promoting questional practices (a LOT of unnecessary ID's, for example) to new coders who know no better. Shame...
 
 Instead, close the computer, break out a piece of paper, and draw out the final timer. Examine how it all works together. There are three parts, all wrapped neatly in the Pomodoro timer component: an up/down counter widget (you'll need TWO of those), and a timer. That's it. So how about, instead of designing the entire thing, we focus on that up/down widget?
+
+## Yeah, but HOW?
+Elegant coding happens when you remember three things: Encapsulation, delegation and communication. Make your widgets entirely self-contained, needing nothing outside themselves to do what they do. Give them the ability to be told what to do, without requiring that they be told HOW to do it. Give them a means to communicate with their container, and to get messages from it.
